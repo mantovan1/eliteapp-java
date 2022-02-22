@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_form">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20sp"
+        android:id="@+id/edt_email"
+        android:hint="Insira seu email..."
+        android:background="@drawable/inputshape" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/edt_senha"
+        android:hint="Insira sua senha..."
+        android:background="@drawable/inputshape"/>
+
+    <Button
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Login"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/btn_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txt_message"
+        android:layout_marginTop="20sp"/>
+
+</LinearLayout>

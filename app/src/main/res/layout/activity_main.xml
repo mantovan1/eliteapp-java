@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/icon"
+        android:layout_marginBottom="30sp"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="20sp"
+        android:text="Entrar"
+        android:textStyle="bold"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/btn_login"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:text="Pular"
+        android:textStyle="bold"
+        android:textColor="#8629FF"
+        android:background="@drawable/buttonshape_reverse"
+        android:id="@+id/btn_pular"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250sp"
+        android:background="@android:color/transparent"
+        android:text="Não possui uma conta?\nClique aqui para se cadastrar"
+        android:textColor="@color/white"
+        android:id="@+id/btn_cadastro"/>
+</LinearLayout>
