@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +29,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView txt_welcome = (TextView) findViewById(R.id.txt_welcome);
+        SharedPreferences sharedPreferences = getSharedPreferences("secret", MODE_PRIVATE);
+        String text = sharedPreferences.getString("name", "");
+
+        if(text != "") {
+            Intent switchActivityIntent = new Intent(this, HomeActivity.class);
+            startActivity(switchActivityIntent);
+        }
 
         Button btn_login = (Button) findViewById(R.id.btn_login);
         btn_login.setOnClickListener( new View.OnClickListener() {

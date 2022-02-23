@@ -18,19 +18,21 @@
         android:orientation="horizontal"
         android:paddingHorizontal="10sp">
 
-        <Button
+        <ImageButton
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_margin="10sp"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/roupas">
+
+        </ImageButton>
+
+        <ImageButton
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_margin="10sp">
 
-        </Button>
-
-        <Button
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_margin="10sp">
-
-        </Button>
+        </ImageButton>
 
     </LinearLayout>
 
@@ -40,19 +42,21 @@
         android:orientation="horizontal"
         android:paddingHorizontal="10sp">
 
-        <Button
+        <ImageButton
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_margin="10sp">
 
-        </Button>
+        </ImageButton>
 
-        <Button
+        <ImageButton
             android:layout_width="150sp"
             android:layout_height="150sp"
-            android:layout_margin="10sp">
+            android:layout_margin="10sp"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/maquiagem">
 
-        </Button>
+        </ImageButton>
 
     </LinearLayout>
 
