@@ -18,31 +18,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonshape"
-        android:text="Explorar Categorias"/>
+        android:text="Explorar Categorias"
+        android:id="@+id/btn_explorar"
+        android:layout_marginBottom="20sp"/>
 
-    <HorizontalScrollView
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:id="@+id/img_empresa"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginVertical="20sp"/>
-
-        <ImageView
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:id="@+id/img_empresa_2"
-            android:layout_marginHorizontal="20sp"
-            android:layout_marginVertical="20sp"/>
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
+        android:layout_height="match_parent"
+        android:id="@+id/lv_empresas"/>
 
 </LinearLayout>
