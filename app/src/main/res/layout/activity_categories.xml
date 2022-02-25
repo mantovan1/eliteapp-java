@@ -23,14 +23,18 @@
             android:layout_height="150sp"
             android:layout_margin="10sp"
             android:background="@color/design_default_color_primary"
-            android:src="@drawable/roupas">
+            android:src="@drawable/roupas"
+            android:id="@+id/btn_moda">
 
         </ImageButton>
 
         <ImageButton
             android:layout_width="150sp"
             android:layout_height="150sp"
-            android:layout_margin="10sp">
+            android:layout_margin="10sp"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/alimentacao"
+            android:id="@+id/btn_alimentacao">
 
         </ImageButton>
 
@@ -45,8 +49,10 @@
         <ImageButton
             android:layout_width="150sp"
             android:layout_height="150sp"
-            android:layout_margin="10sp">
-
+            android:layout_margin="10sp"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/tecnologia"
+            android:id="@+id/btn_tecnologia">
         </ImageButton>
 
         <ImageButton
@@ -54,10 +60,27 @@
             android:layout_height="150sp"
             android:layout_margin="10sp"
             android:background="@color/design_default_color_primary"
-            android:src="@drawable/maquiagem">
+            android:src="@drawable/maquiagem"
+            android:id="@+id/btn_maquiagem">
 
         </ImageButton>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10sp">
+
+        <ImageButton
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_margin="10sp"
+            android:background="@color/design_default_color_primary"
+            android:src="@drawable/outros"
+            android:id="@+id/btn_outros">
+        </ImageButton>
     </LinearLayout>
 
 </LinearLayout>

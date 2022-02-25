@@ -27,14 +27,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         SharedPreferences sharedPreferences = getSharedPreferences("secret", MODE_PRIVATE);
         String text = sharedPreferences.getString("name", "");
 
         if(text != "") {
             Intent switchActivityIntent = new Intent(this, HomeActivity.class);
+            //switchActivityIntent.setFlags(switchActivityIntent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
+            switchActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(switchActivityIntent);
+        } else {
+            setContentView(R.layout.activity_main);
         }
 
         Button btn_login = (Button) findViewById(R.id.btn_login);

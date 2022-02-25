@@ -1,6 +1,7 @@
 package com.example.teste.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -52,11 +53,14 @@ public class AdapterEmpresasList extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View v = View.inflate(this.context, R.layout.layout_empresa, null);
+
+        v.setBackgroundColor(Color.parseColor("#d3d3d3"));
+
         ImageView img_empresa = (ImageView) v.findViewById(R.id.img_empresa);
         TextView tvProductName = (TextView) v.findViewById(R.id.txt_nome_empresa);
         TextView tvProductPrice = (TextView) v.findViewById(R.id.txt_categoria);
 
-        Picasso.with(v.getContext())
+        Picasso.get()
                 .load("http://192.168.15.152:8080/" + empresasList.get(position).getFoto_perfil())
                 .resize(500, 500)
                 .into(img_empresa);
