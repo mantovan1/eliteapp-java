@@ -14,13 +14,14 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@android:drawable/toast_frame"/>
+            android:id="@+id/img_empresa"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Restaurante Firenzi"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:id="@+id/txt_nome_empresa"/>
 
     </LinearLayout>
 
